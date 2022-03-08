@@ -1,0 +1,41 @@
+body {
+    background-color: #eeeeee;
+}
+
+@import url(http://fonts.googleapis.com/earlyaccess/Lalezar.css);
+
+* {
+    font-family: 'Lalezar';
+}
+
+.center  {
+    text-align:center !important;
+}
+
+.top-text {
+    font-size: 4em;
+}
+
+.big-box  {
+    padding: 4%;
+    margin:auto;
+    background-color: #ffFFff;
+    border-radius: 40px;
+    vertical-align: middle;
+    width: 650px;
+}
+
+input,textarea {
+    padding: 1%;
+    margin: 1%;
+    width: 100%;
+    vertical-align: right;
+}
+
+textarea {
+    height: 200px !important;
+}
+
+.form-title {
+    font-size: 2em;
+}
