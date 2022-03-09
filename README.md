@@ -1,4 +1,4 @@
 # Front Project
 
-## Master: Navid Imani
-@navidimani-sisco
+## Master: Navid Imani @navidimani-sisco
+
