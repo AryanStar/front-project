@@ -6,9 +6,9 @@
         echo $id;
         $dbc = new mysqli($dbHost, $dbUser, $dbPassword, $dbName);
         $q = "UPDATE users SET
-          username = {$_POST['username']},
-          password = {$_POST['password']},
-          name = {$_POST['name']}
+          username = '{$_POST['username']}',
+          password = '{$_POST['password']}',
+          name = '{$_POST['name']}'
           WHERE id = ". $id ."
             ";
         if(mysqli_query($dbc, $q)){
@@ -62,7 +62,7 @@
     }   
     else
     {
-        include 'view/edit.php';
+        include 'view/editProfile.php';
     }
 
 ?>

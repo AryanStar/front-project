@@ -22,7 +22,7 @@
             <br>
             <label for="password">رمز عبور جدید: </label>
             <input type="password" id="password" name="password" />
-            <label for="id">آیدی: </label>
+            <label for="id">آیدی عددی: </label>
             <input type="number" id="id" name="id" />
             <br>
             <input type="submit" name="submit" value="ویرایش"/>
