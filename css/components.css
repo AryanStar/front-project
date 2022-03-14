@@ -1,0 +1,50 @@
+
+input,textarea {
+    padding: 1%;
+    margin: 1%;
+    width: 100%;
+    vertical-align: right;
+    background-color: var(--Color3);
+    border:none;
+    border-radius: 15px;
+    font-size: 1.1em;
+}
+
+input:hover {
+    box-shadow: 0 0 10px 1px rgb(0 0 0 / 20%);
+    transition: all 200ms ease-out;
+}
+
+input[type="submit"] {
+    transition: all 500ms ease-in;
+    box-shadow: 5px 5px 15px 5px  var(--Color5);
+    border-radius: 40px;
+}
+
+
+textarea {
+    height: 200px !important;
+}
+
+
+input[type="submit"] {
+    color:white;
+    background-color: var(--Color4) !important;
+}
+
+input[type="radio"] {
+    padding: 0% !important;
+    width: 50px    !important;
+}
+
+
+input[type="submit"] {
+    margin-top: 2% !important;
+    padding-top: 2% !important;
+    padding-bottom: 2% !important;
+    cursor: pointer;
+}
+
+* {
+    accent-color: var(--Color4);
+}

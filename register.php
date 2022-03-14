@@ -1,10 +1,12 @@
 <?php
 
     include 'config.php';
+    include 'lib/db.php';
     if ( isset ($_POST['submit']) ) {
-        $dbc = new mysqli($dbHost, $dbUser, $dbPassword, $dbName);
-        $q = "INSERT INTO users(id,username,password,name) VALUES (NULL,'{$_POST['username']}','{$_POST['password']}','{$_POST['name']}')";
-        if(mysqli_query($dbc, $q)){
+        $dbc = new DB($dbHost, $dbUser, $dbPassword, $dbName);
+        $q = "INSERT INTO users(id,username,password,name,gender) VALUES (?,?,?,?,?)";
+        $result = $dbc -> query($q,NULL,$_POST['username'],$_POST['password'],$_POST['name'],$_POST['gender']);
+        if($result){
             echo '<!DOCTYPE html>
             <html lang="fa">
             <head>
@@ -20,7 +22,7 @@
                 <div class="big-box">
                     <p class="center" style="color:green;font-size:3em;">ثبت نام با موفقیت انجام شد</p>
                     <a href="register.php">
-                        <button style="width:100%;padding:2%;font-size:1em;border:none;border-radius:40px">بازگشت به صفحه ثبت نام</button>
+                    <button style="width:100%;padding:2%;font-size:1em;border:none;border-radius:40px;background-color:#2C394B">بازگشت به صفحه ثبت نام</button>
                     </a>
                 </div>
                 
@@ -44,7 +46,7 @@
                 <div class="big-box">
                     <p class="center" style="color:red;font-size:3em;">ثبت نام با موفقیت انجام نشد ، این نام کاربری قبلا استفاده شده</p>
                     <a href="register.php">
-                        <button style="width:100%;padding:2%;font-size:1em;border:none;border-radius:40px">بازگشت به صفحه ثبت نام</button>
+                        <button style="width:100%;padding:2%;font-size:1em;border:none;border-radius:40px;background-color:#2C394B">بازگشت به صفحه ثبت نام</button>
                     </a>
                 </div>
                 
@@ -57,5 +59,4 @@
     {
         include 'view/register.php';
     }
-
 ?>

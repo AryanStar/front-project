@@ -1,8 +1,18 @@
-body {
-    background-color: #eeeeee;
+:root {
+    --Color1: #3e454e;
+    --Color2: #3e454e;
+    --Color3: #ffffff1f;
+    --Color4: #FF4C29;
+    --Color5: #ff4d297a;
 }
 
-@import url(http://fonts.googleapis.com/earlyaccess/Lalezar.css);
+body {
+    background-image: url("../images/bg.jfif");
+    background-repeat: repeat;
+    background-color: var(--Color1);
+}
+
+
 
 * {
     font-family: 'Lalezar';
@@ -19,23 +29,21 @@ body {
 .big-box  {
     padding: 4%;
     margin:auto;
-    background-color: #ffFFff;
+    background-color: var(--Color2);
     border-radius: 40px;
     vertical-align: middle;
-    width: 650px;
-}
+    width: 30%;
+    box-shadow: 0px 5px 22px 5px rgba(0,0,0,0.2);
 
-input,textarea {
-    padding: 1%;
-    margin: 1%;
-    width: 100%;
-    vertical-align: right;
 }
-
-textarea {
-    height: 200px !important;
-}
-
 .form-title {
     font-size: 2em;
+}
+
+* {
+    color:white;
+}
+
+i {
+    margin:10px;
 }
