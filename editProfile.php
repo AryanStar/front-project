@@ -5,14 +5,17 @@
 
     if ( isset ($_POST['submit']) ) {
         $id = $_GET['id'];
-        $dbc = new mysqli($dbHost, $dbUser, $dbPassword, $dbName);
+        $dbc = new DB($dbHost, $dbUser, $dbPassword, $dbName);
+
         $q = "UPDATE users SET
-          username = '{$_POST['username']}',
-          password = '{$_POST['password']}',
-          name = '{$_POST['name']}'
-          WHERE id = ". $id ."
+          username = ?,
+          password = ?,
+          name = ?,
+          gender = ?
+          WHERE id = ?
             ";
-        if(mysqli_query($dbc, $q)){
+        $result = $dbc -> query($q,$_POST['username'],$_POST['password'],$_POST['name'],$_POST['gender'],$id);
+        if($result){
             echo '<!DOCTYPE html>
             <html lang="fa">
             <head>
