@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>قالی شویی | افزودن خدمات</title>
+    <title>قالی شویی | ویرایش خدمات</title>
     <link href="css/style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/07e2714d93.js" crossorigin="anonymous"></script>
 
@@ -13,7 +13,7 @@
     <h1 class="center top-text" >خدمات</h1>
     <div class="big-box">
         <form action="" method = "post">
-            <label for="title" class="center form-title">افزودن خدمات</label>
+            <label for="title" class="center form-title">ویرایش خدمات</label>
             <br>
             <br>
             <label for="carpetType"><i class="fa-solid fa-question"></i> نوع فرش جهت شست و شو:</label>
