@@ -37,9 +37,7 @@
             <label for="description"><i class="fa-solid fa-message"></i> توضیح اضافه: </label>
             <textarea id="description" name="description" required ></textarea>
             <br>
-            <br>
             <input type="submit" name="submit" value="افزودن خدمات شست و شو"/>
-            <br>
             <br>
         </form>
     </div>

@@ -60,10 +60,7 @@
             <label for="description"><i class="fa-solid fa-message"></i> توضیح اضافه: </label>
             <textarea id="description" name="description" required ><?php if (isset($row['description'])) echo $row['description']?></textarea>
             <br>
-            <br>
             <input type="submit" name="submit" value="ثبت تغییرات"/>
-            <br>
-            <br>
         </form>
     </div>
     
