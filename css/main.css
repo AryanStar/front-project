@@ -1,9 +1,10 @@
 :root {
-    --Color1: #3e454e;
-    --Color2: #3e454e;
-    --Color3: #ffffff1f;
-    --Color4: #FF4C29;
-    --Color5: #ff4d297a;
+    /* Colors From md.css (Material Design) */
+    --Color1: var(--md-sys-color-secondary-container-dark);
+    --Color2: var(--md-sys-color-secondary-container-dark);
+    --Color3: var(--md-sys-color-tertiary-container-dark);
+    --Color4: var(--md-sys-color-primary-light);
+    --Color5: var(--md-sys-color-primary-dark);
 }
 
 body {
