@@ -48,3 +48,15 @@ body {
 i {
     margin:10px;
 }
+
+.done {
+    color:green;font-size:3em;
+}
+
+.fail {
+    color:red;font-size:3em;
+}
+
+.back-button {
+    width:100%;padding:2%;font-size:1em;border:none;border-radius:40px;background-color:#2C394B;
+}

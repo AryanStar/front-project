@@ -20,9 +20,9 @@
             <body dir="rtl">
             <h1 class="center top-text" >خدمات</h1>
             <div class="big-box">
-                    <p class="center" style="color:green;font-size:3em;">خدمات با موفقیت افزوده شد</p>
+                    <p class="center done">خدمات با موفقیت افزوده شد</p>
                     <a href="add-product.php">
-                    <button style="width:100%;padding:2%;font-size:1em;border:none;border-radius:40px;background-color:#2C394B">بازگشت به صفحه افزودن خدمات</button>
+                    <button class="back-button">بازگشت به صفحه افزودن خدمات</button>
                     </a>
                 </div>
                 
@@ -44,9 +44,9 @@
             <body dir="rtl">
             <h1 class="center top-text" >خدمات</h1>
             <div class="big-box">
-                    <p class="center" style="color:red;font-size:3em;">مشکلی پیش آمده</p>
+                    <p class="center fail">مشکلی پیش آمده</p>
                     <a href="add-product.php">
-                    <button style="width:100%;padding:2%;font-size:1em;border:none;border-radius:40px;background-color:#2C394B">بازگشت به صفحه افزودن خدمات</button>
+                    <button class="back-button">بازگشت به صفحه افزودن خدمات</button>
                     </a>
                 </div>
                 

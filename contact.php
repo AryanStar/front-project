@@ -24,9 +24,9 @@
             <body dir="rtl">
                 <h1 class="center top-text" >تماس با ما</h1>
                 <div class="big-box">
-                    <p class="center" style="color:green;font-size:3em;">پیام شما با موفقیت ارسال شد</p>
+                    <p class="center done">پیام شما با موفقیت ارسال شد</p>
                     <a href="contact.php">
-                    <button style="width:100%;padding:2%;font-size:1em;border:none;border-radius:40px;background-color:#2C394B">بازگشت به قرم تماس با ما</button>
+                    <button class="back-button">بازگشت به قرم تماس با ما</button>
                     </a>
                 </div>
                 

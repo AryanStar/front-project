@@ -20,9 +20,9 @@
             <body dir="rtl">
             <h1 class="center top-text" >کاربر جدید</h1>
             <div class="big-box">
-                    <p class="center" style="color:green;font-size:3em;">کاربر جدید با موفقیت افزوده شد</p>
+                    <p class="center done" >کاربر جدید با موفقیت افزوده شد</p>
                     <a href="addaccount.php">
-                    <button style="width:100%;padding:2%;font-size:1em;border:none;border-radius:40px;background-color:#2C394B">بازگشت به صفحه افزودن کاربر</button>
+                    <button class="back-button">بازگشت به صفحه افزودن کاربر</button>
                     </a>
                 </div>
                 
@@ -44,9 +44,9 @@
             <body dir="rtl">
             <h1 class="center top-text" >کاربر جدید</h1>
             <div class="big-box">
-                    <p class="center" style="color:red;font-size:3em;">کاربر جدید با موفقیت اضافه نشد ، این نام کاربری قبلا استفاده شده</p>
+                    <p class="center fail">کاربر جدید با موفقیت اضافه نشد ، این نام کاربری قبلا استفاده شده</p>
                     <a href="addaccount.php">
-                    <button style="width:100%;padding:2%;font-size:1em;border:none;border-radius:40px;background-color:#2C394B">بازگشت به صفحه افزودن کاربر</button>
+                    <button class="back-button">بازگشت به صفحه افزودن کاربر</button>
                     </a>
                 </div>
                 

@@ -28,9 +28,9 @@
             <body dir="rtl">
                 <h1 class="center top-text" >خدمات</h1>
                 <div class="big-box">
-                    <p class="center" style="color:green;font-size:3em;">ویرایش با موفقیت انجام شد</p>
+                    <p class="center done" >ویرایش با موفقیت انجام شد</p>
                     <a href="add-product.php">
-                        <button style="width:100%;padding:2%;font-size:1em;border:none;border-radius:40px;background-color:#2C394B">بازگشت به صفحه افزودن خدمات</button>
+                        <button class="back-button">بازگشت به صفحه افزودن خدمات</button>
                     </a>
                 </div>
                 
@@ -52,9 +52,9 @@
             <body dir="rtl">
                 <h1 class="center top-text" >خدمات</h1>
                 <div class="big-box">
-                    <p class="center" style="color:red;font-size:3em;">ویرایش با موفقیت انجام نشد ، این آیدی قبلا استفاده نشده</p>
+                    <p class="center fail" >ویرایش با موفقیت انجام نشد ، این آیدی قبلا استفاده نشده</p>
                     <a href="add-product.php">
-                    <button style="width:100%;padding:2%;font-size:1em;border:none;border-radius:40px;background-color:#2C394B">بازگشت به صفحه افزودن خدمات</button>
+                    <button class="back-button">بازگشت به صفحه افزودن خدمات</button>
                     </a>
                 </div>
                 
