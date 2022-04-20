@@ -15,6 +15,11 @@
         <form action="" method = "post">
             <label for="title" class="center form-title">فرم ورود اعضا</label>
             <br>
+            <?php
+                if (isset($login_message)) {
+                    echo '<label class="message red"><i class="fa-solid fa-error"></i>'. $login_message .'</label>';
+                }
+            ?>
             <br>
             
             <label for="username"><i class="fa-solid fa-user"></i> نام کاربری شما: </label>

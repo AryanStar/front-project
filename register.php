@@ -2,6 +2,8 @@
 
     include 'config.php';
     include 'lib/db.php';
+    include 'utils/security.php';
+
     if ( isset ($_POST['submit']) ) {
         $dbc = new DB($dbHost, $dbUser, $dbPassword, $dbName);
         $q = "INSERT INTO users(id,username,password,name,gender) VALUES (?,?,?,?,?)";

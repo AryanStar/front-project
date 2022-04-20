@@ -7,6 +7,8 @@
     {
         include  'config.php';
         include 'lib/db.php';
+        include 'utils/security.php';
+
         $dbc = new DB($dbHost, $dbUser, $dbPassword, $dbName);
         $q = "INSERT INTO messages (id, sender, message) VALUES (?,?,?)";
         $result = $dbc -> query($q,null,$_POST['name'],$_POST['message']);

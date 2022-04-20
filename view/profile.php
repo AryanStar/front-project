@@ -24,6 +24,11 @@
             <input type="password" id="password" name="password" required value="<?php if (isset($row['password'])) echo $row['password']?>" /> -->
             <label for="gender"><i class="fa-solid fa-question"></i> جنسیت : <?php if (isset($row['gender'])) echo $row['gender']?></label>
             <br>
+            <label for="role"><i class="fa-solid fa-shield"></i>  سطح دسترسي شما:  <?php if (isset($row['role'])) echo $row['role']?></label>
+            <br>
+            <input type="submit" name="submit" value="خروج از حساب كاربري"/>
+
+            <br>
         </form>
     </div>
     
