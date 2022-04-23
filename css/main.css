@@ -64,3 +64,21 @@ i {
 .back-button {
     width:100%;padding:2%;font-size:1em;border:none;border-radius:40px;background-color:#2C394B;
 }
+
+.grid{
+    display: grid;
+    gap: 8px;
+    grid-template-columns: auto;
+}
+.grid-2{
+    grid-template-columns: auto auto;
+}
+.grid-3{
+    grid-template-columns: auto auto auto;
+}
+.grid-4{
+    grid-template-columns: auto auto auto auto;
+}
+.grid-6{
+    grid-template-columns: auto auto auto auto auto auto;
+}

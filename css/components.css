@@ -29,7 +29,14 @@ textarea {
 
 input[type="submit"] {
     color:white;
-    background-color: var(--Color4) !important;
+    background-color: var(--Color4) ;
+}
+
+.buy {
+    background-color: green !important;
+    transition: all 500ms ease-in;
+    box-shadow: 5px 5px 15px 5px  rgb(3, 82, 3) !important;
+    border-radius: 40px;
 }
 
 input[type="radio"] {
@@ -49,3 +56,20 @@ input[type="submit"] {
     accent-color: var(--Color4);
 }
 
+.card{
+    border-radius: 12px;
+    overflow: hidden;
+}
+.card.outlined{
+    border: 1px solid black;
+}
+.card.filled{
+    background-color: aquamarine;
+}
+.card-body{
+    padding: 16px;
+}
+.card-title{}
+.card-img-top{
+    width: 100%;
+}
