@@ -5,7 +5,7 @@
     include 'utils/security.php';
     if (Authentication :: check()) {
         if ( isset ($_POST['submit']) ) {
-            $id = $_GET['id'];
+            $id = Authentication :: uid();
             $dbc = new DB($dbHost, $dbUser, $dbPassword, $dbName);
     
             $q = "UPDATE users SET
@@ -67,11 +67,12 @@
         }   
         else
         {
-            if (isset($_GET['id'])) {
+            $id = Authentication :: uid();
+            if (isset($id)) {
                 // Vaghti Ke Jolosh id = Bood
                 $dbc = new DB($dbHost, $dbUser, $dbPassword, $dbName);
                 $q = "SELECT * FROM users WHERE id = ? LIMIT 1";
-                $result = $dbc -> query($q,$_GET['id']);
+                $result = $dbc -> query($q,$id);
                 $row = $result -> fetchArray();
                 $dbc -> close();
                 include 'view/editProfile.php';

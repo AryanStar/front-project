@@ -5,6 +5,9 @@
     include 'utils/security.php';
 
     if (Authentication :: check()) {
+        if ( !Authorization :: checkRole('admin')) {
+            header("Location: profile.php");
+        }
         if ( isset ($_POST['submit']) ) {
             $dbc = new DB($dbHost, $dbUser, $dbPassword, $dbName);
             $q = "INSERT INTO users(id,username,password,name,gender) VALUES (?,?,?,?,?)";
