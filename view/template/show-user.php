@@ -4,8 +4,7 @@
     <td><?php echo $user['gender']; ?></td>
     <td><?php echo $user['role']; ?></td>
     <td>
-        <a href="editUser.php?user=<?php echo $user['id']; ?>" class="fa-solid fa-edit"></a>
+        <a href="editUser.php?user=<?php echo $user['id']; ?>"><i class="fa-solid fa-edit"></i></a>
         <a href="deleteUser.php?user=<?php echo $user['id']; ?>" class="fa-solid fa-trash padding-right"></a>
-        
     </td>
 </tr>
