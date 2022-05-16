@@ -9,7 +9,11 @@
     <script src="https://kit.fontawesome.com/07e2714d93.js" crossorigin="anonymous"></script>
 
 </head>
-<body dir="rtl">
+
+<body dir="rtl" class="grid-view">
+    <?php include 'layout/header.php'; ?>
+    <?php include 'layout/navigation.php'; ?>
+    <div class="col-9">
     <h1 class="center top-text" >خدمات ما</h1>
     <div class="grid grid-4">
     <?php
@@ -23,6 +27,8 @@
         }
     ?>
     </div>
-    
+    </div>
+    <?php include 'layout/footer.php'; ?>
 </body>
+
 </html>

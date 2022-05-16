@@ -11,7 +11,7 @@
         if ( isset ($_POST['submit']) ) {
             $dbc = new DB($dbHost, $dbUser, $dbPassword, $dbName);
             $sql = "SELECT * FROM users
-                    WHERE username = ? AND password = ?";
+                    WHERE username = ? AND password = ? AND status = 'active'";
             $result = $dbc -> query( $sql, $_POST['username'], $_POST['password'] );
             
             if ($dbc -> numRows() > 0){ 

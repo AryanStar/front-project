@@ -7,7 +7,7 @@
     if (Authentication :: check()) {
         if (Authorization :: checkRole('admin')) {
             $dbc = new DB($dbHost, $dbUser, $dbPassword, $dbName);
-            $sql = "SELECT * FROM product";
+            $sql = "SELECT * FROM product WHERE status = 'active'";
             $result = $dbc -> query( $sql );
             $products = $dbc -> fetchAll();
             $dbc -> close();

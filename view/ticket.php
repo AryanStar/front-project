@@ -9,8 +9,11 @@
     <script src="https://kit.fontawesome.com/07e2714d93.js" crossorigin="anonymous"></script>
 
 </head>
-<body dir="rtl">
-    <h1 class="center top-text" >سیستم تیکت</h1>
+
+<body dir="rtl" class="grid-view">
+    <?php include 'layout/header.php'; ?>
+    <?php include 'layout/navigation.php'; ?>
+    <div class="col-9">
     <div class="big-box">
         <form action="" method = "post">
             <label for="form-title" class="center form-title">فرم ارسال تیکت</label>
@@ -42,5 +45,8 @@
             <input type="submit" name="submit" value="ارسال"/>
         </form>
     </div>
+    </div>
+    <?php include 'layout/footer.php'; ?>
 </body>
+
 </html>

@@ -9,11 +9,15 @@
     <script src="https://kit.fontawesome.com/07e2714d93.js" crossorigin="anonymous"></script>
 
 </head>
-<body dir="rtl">
-    <h1 class="center top-text" >پروفایل شما</h1>
+
+
+<body dir="rtl" class="grid-view">
+    <?php include 'layout/header.php'; ?>
+    <?php include 'layout/navigation.php'; ?>
+    <div class="col-9">
     <div class="big-box">
         <form action="" method = "post">
-            <label for="title" class="center form-title">اطلاعات</label>
+            <label for="title" class="center form-title">پروفایل شما</label>
             <br>
             <br>
             <label for="username"><i class="fa-solid fa-user"></i>  نام کاربری:  <?php if (isset($row['username'])) echo $row['username']?></label>
@@ -31,6 +35,8 @@
             <br>
         </form>
     </div>
-    
+    </div>
+    <?php include 'layout/footer.php'; ?>
 </body>
+
 </html>

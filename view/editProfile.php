@@ -9,8 +9,11 @@
     <script src="https://kit.fontawesome.com/07e2714d93.js" crossorigin="anonymous"></script>
 
 </head>
-<body dir="rtl">
-    <h1 class="center top-text" >ویرایش</h1>
+
+<body dir="rtl" class="grid-view">
+    <?php include 'layout/header.php'; ?>
+    <?php include 'layout/navigation.php'; ?>
+    <div class="col-9">
     <div class="big-box">
         <form action="" method = "post">
             <label for="title" class="center form-title">فرم ویرایشگر</label>
@@ -33,6 +36,7 @@
             <input type="submit" name="submit" value="ویرایش"/>
         </form>
     </div>
-    
+    </div>
+    <?php include 'layout/footer.php'; ?>
 </body>
 </html>

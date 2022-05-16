@@ -7,7 +7,7 @@
     if (Authentication :: check()) {
         if (Authorization :: checkRole('admin')) {
             $dbc = new DB($dbHost, $dbUser, $dbPassword, $dbName);
-            $sql = "SELECT * FROM messages";
+            $sql = "SELECT * FROM messages WHERE status = 'active'";
             $result = $dbc -> query( $sql );
             $messages = $dbc -> fetchAll();
             $dbc -> close();

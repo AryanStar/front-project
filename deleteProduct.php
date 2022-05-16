@@ -6,12 +6,18 @@
 
     if (Authentication :: check()) {
         if (Authorization :: checkRole('admin')) {
+            if (isset($_GET['id'])) {
+                $dbc = new DB($dbHost, $dbUser, $dbPassword, $dbName);
+                $sql = "UPDATE product SET status = 'deleted' WHERE id = ?";
+                $result = $dbc -> query( $sql ,$_GET['id']);
+                $dbc -> close();
+            }
             $dbc = new DB($dbHost, $dbUser, $dbPassword, $dbName);
-            $sql = "SELECT * FROM users where status = 'active'";
+            $sql = "SELECT * FROM product WHERE status = 'active' ";
             $result = $dbc -> query( $sql );
-            $users = $dbc -> fetchAll();
+            $products = $dbc -> fetchAll();
             $dbc -> close();
-            include 'view/users.php';
+            include 'view/productlist.php';
         }
         else
         {

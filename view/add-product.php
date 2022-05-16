@@ -9,9 +9,12 @@
     <script src="https://kit.fontawesome.com/07e2714d93.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tiny.cloud/1/mfte9n79vnucnsgjtir9daj0l2jln33q776c78xq3tko2mp1/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 </head>
-<body dir="rtl">
-    <h1 class="center top-text" >خدمات</h1>
-    <div class="big-box">
+
+<body dir="rtl" class="grid-view">
+    <?php include 'layout/header.php'; ?>
+    <?php include 'layout/navigation.php'; ?>
+    <div class="col-9">
+    <div class="box">
         <form action="" method = "post">
             <label for="title" class="center form-title">افزودن خدمات</label>
             <br>
@@ -52,5 +55,7 @@
       tinycomments_author: 'Author name',
     });
   </script>
+    </div>
+    <?php include 'layout/footer.php'; ?>
 </body>
 </html>
