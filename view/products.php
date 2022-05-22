@@ -12,10 +12,9 @@
 
 <body dir="rtl" class="grid-view">
     <?php include 'layout/header.php'; ?>
-    <?php include 'layout/navigation.php'; ?>
-    <div class="col-9">
-    <h1 class="center top-text" >خدمات ما</h1>
-    <div class="grid grid-4">
+    <?php include 'layout/products_navigation.php'; ?>
+    <div class="col-9 col-12-mobile">
+    <div class="grid grid-4 container">
     <?php
         if( count( $products ) == 0 ){
             echo '<p>محصولی یافت نشد</p>';

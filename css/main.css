@@ -107,6 +107,13 @@ i {
 .grid-4{
     grid-template-columns: auto auto auto auto;
 }
+
+@media screen and (max-width: 1200px) {
+    .grid-4{
+        grid-template-columns: auto auto;
+    }
+}
+
 .grid-6{
     grid-template-columns: auto auto auto auto auto auto;
 }
@@ -178,4 +185,16 @@ i {
 .webfooter {
     padding: 10px;
     color:white
+}
+
+.container {
+    margin: 25px;
+}
+
+
+@media screen and (max-width: 720px) {
+    .col-12-mobile {
+        grid-column: span 12;
+    }
+    
 }

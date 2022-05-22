@@ -1,5 +1,5 @@
 <div class="col-3">
-    <nav>
+    <nav class="nav">
         <p class="nav-headline">لیست بخش های پنل کاربری</p>
         <ul>
             <?php
@@ -16,7 +16,7 @@
                     }
                 }
             ?>
-            <li class="nav-label" ><i class="fa fa-shopping-cart" aria-hidden="true"></i><a href="products.php">محصولات</a></li>
+            <!-- <li class="nav-label" ><i class="fa fa-shopping-cart" aria-hidden="true"></i><a href="products.php">محصولات</a></li> -->
             <!-- <li class="nav-label" ><i class="fa fa-sms" aria-hidden="true"></i><a href="contact.php">تماس با ما</a></li> -->
             <li class="nav-label" ><i class="fa fa-user" aria-hidden="true"></i><a href="profile.php">پروفایل</a></li>
             <li class="nav-label" ><i class="fa fa-user" aria-hidden="true"></i><a href="editProfile.php">ویرایش پروفایل</a></li>

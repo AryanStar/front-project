@@ -112,7 +112,8 @@ ul {
   }
 
 
-nav {
+.nav {
+    padding: 10px;
     background-color: #1414142a;
     border-radius: 20px;
     height: 800px;
@@ -123,7 +124,7 @@ nav {
     line-height: 20px;
     font-size: 14px;
     font-weight: 500;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-right: 20px;
 }
 
@@ -154,4 +155,56 @@ nav {
 
 .nav-label > i {
     padding-right: 10px;
+}
+
+.nav-search {
+    text-align: center;
+    margin: 0;
+    color:white;
+    border-radius: 20px;
+    width: 95%;
+    padding-right: 4%;
+}
+.nav-search::placeholder { 
+    color: white;
+    opacity: 60%;
+}
+
+@media screen and (max-width: 720px) {
+    .nav-label {
+        border-radius: 30px;
+        font-size: 14px;
+        line-height: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        display: inline-block;
+    }
+    .nav {
+        background-color: #1414142a;
+        border-radius: 20px;
+        height: 350px;
+    }
+}
+
+
+.nav.header {
+    background-color: #1414142a;
+    border-radius: 20px;
+    height: 65px;
+}
+.nav-label.header {
+    border-radius: 30px;
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
 }
