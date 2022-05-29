@@ -198,3 +198,30 @@ i {
     }
     
 }
+
+.full-img {
+    width: 100%;
+}
+
+.like-button {
+    border-radius: 25px;
+    padding: 15px;
+    background-color: #ff637d;
+    cursor: pointer;
+}
+
+.bookmark-button {
+    border-radius: 25px;
+    padding: 15px;
+    background-color: #70a3cc;
+    cursor: pointer;
+}
+
+.basket-button {
+    border-radius: 25px;
+    padding: 15px;
+    background-color: #ffc000;
+    cursor: pointer;
+}
+
+

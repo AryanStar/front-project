@@ -45,6 +45,7 @@
         </form>
     </div>
     <br/>
+    <!-- 
     <script>
     tinymce.init({
       selector: 'textarea',
@@ -55,6 +56,7 @@
       tinycomments_author: 'Author name',
     });
   </script>
+-->
     </div>
     <?php include 'layout/footer.php'; ?>
 </body>
